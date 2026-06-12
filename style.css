@@ -1,14 +1,15 @@
 body{
     margin:0;
-    padding:0;
+    font-family:Arial, sans-serif;
     background:#111;
     color:white;
-    font-family:Arial;
 }
+
+/* HERO */
 
 .hero{
     text-align:center;
-    padding:40px;
+    padding:40px 20px;
 }
 
 .logo{
@@ -21,9 +22,53 @@ h1{
 }
 
 button{
-    padding:15px 30px;
-    font-size:18px;
+    padding:12px 25px;
     border:none;
     border-radius:8px;
     cursor:pointer;
+}
+
+/* CONTENT SECTIONS */
+
+.welcome,
+.rules,
+.philosophy{
+    padding:25px;
+    margin:20px;
+    background:#1b1b1b;
+    border-radius:12px;
+}
+
+/* TOP BAR */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    padding:15px;
+}
+
+.topbar h2{
+    color:gold;
+}
+
+.menu-btn,
+.bell{
+    background:none;
+    color:white;
+    font-size:22px;
+}
+
+/* MENU */
+
+.menu{
+    display:none;
+    background:#1b1b1b;
+    padding:20px;
+}
+
+.menu p{
+    padding:10px;
+    border-bottom:1px solid #333;
 }
