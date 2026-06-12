@@ -1,1 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
 
+.hero{
+    text-align:center;
+    padding:40px;
+}
+
+.logo{
+    width:180px;
+    opacity:0.85;
+}
+
+h1{
+    color:gold;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
