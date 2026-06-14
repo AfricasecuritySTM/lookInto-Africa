@@ -8,6 +8,44 @@ title:"WELCOME",
 message:
 "Welcome to lookInto-Africa.\n\nA collaborative home for African engineers,\nresearchers and innovators."
 
+  const pages = [
+
+{
+title:"WELCOME BUILDERS 👋",
+
+message:
+"Welcome to lookInto-Africa.\n\nA collaborative home for African engineers, developers, researchers and innovators working to solve real-world African challenges through technology and engineering."
+},
+
+{
+title:"OUR MISSION",
+
+message:
+"lookInto-Africa exists to help creators document, validate and discuss engineering projects from research through development, prototype and deployment.\n\nWe believe collaboration turns ideas into solutions."
+},
+
+{
+title:"COMMUNITY AWARENESS",
+
+message:
+"Respect fellow creators.\n\nShare constructive observations.\n\nStay relevant to project discussions.\n\nSupport innovation across technical domains."
+},
+
+{
+title:"USER GUIDE",
+
+message:
+"Creators can upload research, project updates, engineering journals, videos, photos and prototype progress.\n\nObservers can view projects, comment, contribute ideas, like and follow creator journeys."
+},
+
+{
+title:"WARNING",
+
+message:
+"lookInto-Africa is a collaborative engineering environment.\n\nUnrelated discussions, disruptive behaviour and activities that discourage innovation may result in warnings or restricted access.\n\nProtect creators. Support innovation."
+}
+
+];
 },
 
 
