@@ -12,6 +12,36 @@ color:white;
 
 }
 
+#title{
+
+font-size:42px;
+
+font-weight:bold;
+
+color:gold;
+
+margin-bottom:20px;
+
+}
+
+
+#message{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:white;
+
+white-space:pre-line;
+
+max-width:500px;
+
+margin:auto;
+
+padding:10px;
+
+}
 
 header{
 
