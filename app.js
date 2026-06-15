@@ -1,4 +1,11 @@
-{
+
+const stage=
+document.getElementById(
+"stage"
+);
+
+const pages=[
+  {
 
 title:"WELCOME BUILDERS 👋",
 
@@ -42,5 +49,8 @@ message:
 "Protect creators.\nAvoid unrelated discussions.\nSupport engineering growth."
 
 }
+
+stage.innerText=
+"Ready";  
 
 ];
