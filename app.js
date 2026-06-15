@@ -1,36 +1,46 @@
+{
 
-<p id="message">
+title:"WELCOME BUILDERS 👋",
 
-Loading...
+message:
+"Welcome to lookInto-Africa.\n\nA collaborative home for African engineers, researchers, developers and innovators working to solve real-world challenges through technology and engineering.\n\nEvery solution begins with an idea."
 
-</p>
+},
 
-</div>
+{
 
+title:"OUR MISSION",
 
-<div
-id="accountArea">
+message:
+"lookInto-Africa exists to help creators document, validate and collaborate on engineering projects."
 
-<button id="create">
+},
 
-Create Account
+{
 
-</button>
+title:"AWARENESS",
 
-<button id="login">
+message:
+"Respect creators.\nSupport innovation.\nShare constructive observations."
 
-Login
+},
 
-</button>
+{
 
-</div>
+title:"USER GUIDE",
 
+message:
+"Creators publish projects.\nObservers learn.\nCollaborators improve ideas."
 
-</div>
+},
 
+{
 
-<script src="script.js">
+title:"WARNING",
 
-</script>
+message:
+"Protect creators.\nAvoid unrelated discussions.\nSupport engineering growth."
 
-  <header>
+}
+
+];
