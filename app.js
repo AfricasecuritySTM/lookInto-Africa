@@ -1,56 +1,75 @@
+function showPage(index){
 
-const stage=
-document.getElementById(
-"stage"
-);
+    title.innerText =
+    pages[index].title;
 
-const pages=[
-  {
+    message.innerText =
+    pages[index].message;
 
-title:"WELCOME BUILDERS 👋",
+    stage.innerText =
+    "Stage " + (index+1) + " of 5";
 
-message:
-"Welcome to lookInto-Africa.\n\nA collaborative home for African engineers, researchers, developers and innovators working to solve real-world challenges through technology and engineering.\n\nEvery solution begins with an idea."
+    let dots = "";
 
-},
+    for(let i=0;i<5;i++){
 
-{
+        if(i<=index){
 
-title:"OUR MISSION",
+            dots += "● ";
 
-message:
-"lookInto-Africa exists to help creators document, validate and collaborate on engineering projects."
+        }else{
 
-},
+            dots += "○ ";
 
-{
+        }
 
-title:"AWARENESS",
+    }
 
-message:
-"Respect creators.\nSupport innovation.\nShare constructive observations."
-
-},
-
-{
-
-title:"USER GUIDE",
-
-message:
-"Creators publish projects.\nObservers learn.\nCollaborators improve ideas."
-
-},
-
-{
-
-title:"WARNING",
-
-message:
-"Protect creators.\nAvoid unrelated discussions.\nSupport engineering growth."
+    progress.innerText = dots;
 
 }
 
-stage.innerText=
-"Ready";  
+const pages = [
+
+{
+title:"Introduction to lookInto-Africa",
+
+message:
+"A collaborative home for African engineers, researchers, developers and innovators working to solve real-world challenges through technology and engineering.\n\nEvery solution begins with an idea."
+},
+
+{
+title:"Our Mission",
+
+message:
+"lookInto-Africa exists to help creators document, validate and discuss engineering projects from research through development, prototype and deployment.\n\nWe believe collaboration turns ideas into solutions."
+},
+
+{
+title:"Community Awareness",
+
+message:
+"Respect fellow creators.\n\nSupport innovation.\n\nShare constructive observations.\n\nStay relevant to project discussions."
+},
+
+{
+title:"User Guide",
+
+message:
+"Creators can upload projects, research, diagrams and journals.\n\nObservers can view projects, comment and collaborate."
+},
+
+{
+title:"Warning",
+
+message:
+"Protect creators.\n\nAvoid unrelated discussions.\n\nSupport engineering growth and collaboration."
+}
 
 ];
+
+const title = document.getElementById("title");
+const message = document.getElementById("message");
+const stage = document.getElementById("stage");
+const progress = document.getElementById("progress");
+const accountArea = document.getElementById("accountArea");
