@@ -158,3 +158,78 @@ border-radius:10px;
 cursor:pointer;
 
 }
+
+.project-card{
+
+    background:#1b1b1b;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin:20px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+
+    min-height:420px;
+
+}
+
+#title{
+
+    color:gold;
+
+    font-size:32px;
+
+    text-align:center;
+
+}
+
+#message{
+
+    color:white;
+
+    line-height:1.8;
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-top:25px;
+
+    white-space:pre-line;
+
+}
+
+.stage-box{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+#stage{
+
+    color:gold;
+
+    font-weight:bold;
+
+}
+
+#progress{
+
+    font-size:28px;
+
+    margin:15px 0;
+
+}
+
+#loading{
+
+    color:gray;
+
+    font-style:italic;
+
+      }
+  
