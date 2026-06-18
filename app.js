@@ -73,3 +73,19 @@ const message = document.getElementById("message");
 const stage = document.getElementById("stage");
 const progress = document.getElementById("progress");
 const accountArea = document.getElementById("accountArea");
+
+showPage(0);
+
+let current = 0;
+
+setInterval(() => {
+
+    current++;
+
+    if(current < pages.length){
+
+        showPage(current);
+
+    }
+
+}, 6000);
