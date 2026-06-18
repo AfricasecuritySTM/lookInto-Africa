@@ -1,34 +1,3 @@
-function showPage(index){
-
-    title.innerText =
-    pages[index].title;
-
-    message.innerText =
-    pages[index].message;
-
-    stage.innerText =
-    "Stage " + (index+1) + " of 5";
-
-    let dots = "";
-
-    for(let i=0;i<5;i++){
-
-        if(i<=index){
-
-            dots += "● ";
-
-        }else{
-
-            dots += "○ ";
-
-        }
-
-    }
-
-    progress.innerText = dots;
-
-}
-
 const pages = [
 
 {
@@ -72,11 +41,31 @@ const title = document.getElementById("title");
 const message = document.getElementById("message");
 const stage = document.getElementById("stage");
 const progress = document.getElementById("progress");
-const accountArea = document.getElementById("accountArea");
-
-showPage(0);
 
 let current = 0;
+
+function showPage(){
+
+    title.innerText = pages[current].title;
+
+    message.innerText = pages[current].message;
+
+    stage.innerText =
+    `Stage ${current + 1} of ${pages.length}`;
+
+    let dots = "";
+
+    for(let i=0;i<pages.length;i++){
+
+        dots += i <= current ? "● " : "○ ";
+
+    }
+
+    progress.innerText = dots;
+
+}
+
+showPage();
 
 setInterval(() => {
 
@@ -84,8 +73,8 @@ setInterval(() => {
 
     if(current < pages.length){
 
-        showPage(current);
+        showPage();
 
     }
 
-}, 6000);
+},6000);
