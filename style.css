@@ -1,235 +1,80 @@
-body{
+const pages = [
 
-margin:0;
+{
+title:"Introduction to lookInto-Africa",
 
-padding:0;
+message:
+"A collaborative home for African engineers, researchers, developers and innovators working to solve real-world challenges through technology and engineering.\n\nEvery solution begins with an idea."
+},
 
-background:#111;
+{
+title:"Our Mission",
 
-font-family:Arial;
+message:
+"lookInto-Africa exists to help creators document, validate and discuss engineering projects from research through development, prototype and deployment.\n\nWe believe collaboration turns ideas into solutions."
+},
 
-color:white;
+{
+title:"Community Awareness",
+
+message:
+"Respect fellow creators.\n\nSupport innovation.\n\nShare constructive observations.\n\nStay relevant to project discussions."
+},
+
+{
+title:"User Guide",
+
+message:
+"Creators can upload projects, research, diagrams and journals.\n\nObservers can view projects, comment and collaborate."
+},
+
+{
+title:"Warning",
+
+message:
+"Protect creators.\n\nAvoid unrelated discussions.\n\nSupport engineering growth and collaboration."
+}
+
+];
+
+const title = document.getElementById("title");
+const message = document.getElementById("message");
+const stage = document.getElementById("stage");
+const progress = document.getElementById("progress");
+
+let current = 0;
+
+function showPage(){
+
+    title.innerText = pages[current].title;
+
+    message.innerText = pages[current].message;
+
+    stage.innerText =
+    `Stage ${current + 1} of ${pages.length}`;
+
+    let dots = "";
+
+    for(let i=0;i<pages.length;i++){
+
+        dots += i <= current ? "● " : "○ ";
+
+    }
+
+    progress.innerText = dots;
 
 }
 
-#title{
+showPage();
 
-font-size:42px;
+setInterval(() => {
 
-font-weight:bold;
+    current++;
 
-color:gold;
+    if(current < pages.length){
 
-margin-bottom:20px;
+        showPage();
 
-}
+    }
 
-
-#message{
-
-font-size:20px;
-
-line-height:1.8;
-
-color:white;
-
-white-space:pre-line;
-
-max-width:500px;
-
-margin:auto;
-
-padding:10px;
-
-}
-
-header{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:15px;
-
-background:black;
-
-}
-
-
-header h2{
-
-color:gold;
-
-}
-
-
-header button{
-
-background:none;
-
-border:none;
-
-color:white;
-
-font-size:22px;
-
-}
-
-
-.container{
-
-text-align:center;
-
-padding:30px;
-
-}
-
-
-.logo{
-
-width:180px;
-
-opacity:.9;
-
-margin-bottom:20px;
-
-}
-
-
-.card{
-
-background:#1c1c1c;
-
-padding:30px;
-
-border-radius:15px;
-
-min-height:250px;
-
-}
-
-
-#title{
-
-font-size:34px;
-
-color:gold;
-
-font-weight:bold;
-
-}
-
-
-#message{
-
-font-size:20px;
-
-line-height:1.8;
-
-white-space:pre-line;
-
-}
-
-
-#accountArea{
-
-display:none;
-
-margin-top:25px;
-
-}
-
-
-#create,
-#login{
-
-padding:15px;
-
-margin:10px;
-
-font-size:18px;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-}
-
-.project-card{
-
-    background:#1b1b1b;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    margin:20px;
-
-    box-shadow:0 0 20px rgba(0,0,0,.5);
-
-    min-height:420px;
-
-}
-
-#title{
-
-    color:gold;
-
-    font-size:32px;
-
-    text-align:center;
-
-}
-
-#message{
-
-    color:white;
-
-    line-height:1.8;
-
-    text-align:center;
-
-    font-size:18px;
-
-    margin-top:25px;
-
-    white-space:pre-line;
-
-}
-
-.stage-box{
-
-    margin-top:35px;
-
-    text-align:center;
-
-}
-
-#stage{
-
-    color:gold;
-
-    font-weight:bold;
-
-}
-
-#progress{
-
-    font-size:28px;
-
-    margin:15px 0;
-
-}
-
-#loading{
-
-    color:gray;
-
-    font-style:italic;
-
-      }
-  
+},6000);
