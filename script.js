@@ -1,4 +1,4 @@
-alert("JavaScript Connected");
+alert("lookInto-Africa Engine Connected");
 const pages = [
 
 {
