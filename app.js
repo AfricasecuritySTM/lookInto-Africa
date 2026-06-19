@@ -1,3 +1,4 @@
+alert("JavaScript Connected");
 const pages = [
 
 {
