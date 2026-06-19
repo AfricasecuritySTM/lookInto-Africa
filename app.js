@@ -62,7 +62,6 @@ function showPage(){
     }
 
     progress.innerText = dots;
-
 }
 
 showPage();
